@@ -3,6 +3,7 @@ body {
 }
 
 .sidebar {
+  display: inline-block;
   height: 100vh;
   width: 8rem;
   padding: 2rem;
@@ -17,4 +18,34 @@ body {
 
 .sidebar__title {
   margin: 10rem 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 0.2rem 0;
+}
+
+.btn--outline {
+  border: solid #eee 0.1rem;
+  border-radius: 0.2rem;
+  color: inherit;
+}
+
+.btn--css {
+  background-color: #84c946;
+}
+
+.btn--pure {
+  background-color: #4763c9;
+}
+
+.content {
+  /* TODO: Does not line up on small screens... */
+  display: inline-block;
+  width: 20rem;
+}
+
+.post__author-photo {
+  height: 5em;
 }
