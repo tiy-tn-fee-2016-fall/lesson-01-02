@@ -2,11 +2,16 @@ body {
   margin: 0;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .sidebar {
-  display: inline-block;
+  display: block;
   height: 100vh;
-  width: 8rem;
+  width: 25%;
   padding: 2rem;
+  float: right;
 
   background: #293662;
 
@@ -34,18 +39,27 @@ body {
 
 .btn--css {
   background-color: #84c946;
+  float: right;
 }
 
 .btn--pure {
   background-color: #4763c9;
+  float: right;
 }
 
 .content {
-  /* TODO: Does not line up on small screens... */
-  display: inline-block;
-  width: 20rem;
+  display: block;
+  width: 75%;
+  height: 100vh;
+  overflow: auto;
+}
+
+.post__author {
+  overflow: auto;
 }
 
 .post__author-photo {
+  float: right;
   height: 5em;
+  border-radius: 50%;
 }
